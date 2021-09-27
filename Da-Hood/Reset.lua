@@ -1,3 +1,5 @@
+-- [ MADE BY ! Lewis#0001 ] --
+
 local DeleteParts = {"LeftUpperArm", "LeftLowerArm", "LeftHand", "RightUpperArm", "RightLowerArm", "RightHand", "LeftUpperLeg", "LeftLowerLeg", "LeftFoot", "RightUpperLeg", "RightLowerLeg", "RightFoot", "UpperTorso", "LowerTorso", "Head", "Humanoid"};
 local Player = game:GetService("Players").LocalPlayer
 
