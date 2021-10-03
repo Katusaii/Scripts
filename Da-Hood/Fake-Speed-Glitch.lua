@@ -13,14 +13,26 @@ local SpeedGlitch = false;
 local GreetAnimation = Instance.new("Animation", ReplicatedStorage)
 GreetAnimation.AnimationId = "rbxassetid://3189777795"
 
+function Unequip()
+    for _, v in pairs(Player.Character:GetChildren()) do
+        if v:IsA("Tool") then
+            v.Parent = Player.Backpack
+        end
+    end
+end
+
 UserInput.InputBegan:Connect(function(Key, Typing)
     if Typing then return end
     if Key.KeyCode == Enum.KeyCode.Q then
         SpeedGlitch = not SpeedGlitch
         if SpeedGlitch then
             Player.Character.Humanoid:LoadAnimation(GreetAnimation):Play()
-            wait(1.45)
+            wait(0.45)
+            Unequip()
+            wait(1)
             Player.Backpack:FindFirstChild("Wallet").Parent = Player.Character
+        else
+            Unequip()
         end
     end
 end)
