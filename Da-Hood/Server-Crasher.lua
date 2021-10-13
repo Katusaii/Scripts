@@ -11,8 +11,8 @@ wait(2)
 getgenv().Crash = true
 getgenv().BuyMask = true
 
-local Amount = 0;
-local Percentage = 0;
+local Amount = 0; -- DONT TOUCH THIS
+local Percentage = 0; -- DONT TOUCH THIS
 local DeleteParts = {"LeftUpperArm", "LeftLowerArm", "LeftHand", "RightUpperArm", "RightLowerArm", "RightHand", "LeftUpperLeg", "LeftLowerLeg", "LeftFoot", "RightUpperLeg", "RightLowerLeg", "RightFoot", "UpperTorso", "LowerTorso", "Head", "Humanoid"};
 local Player = game:GetService("Players").LocalPlayer;
 
