@@ -1,5 +1,8 @@
 -- [ MADE BY ! Lewis#0001 ] --
 
+repeat wait() until game:IsLoaded()
+repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR")
+
 local Player = game:GetService("Players").LocalPlayer
 local RunService = game:GetService("RunService")
 
