@@ -8,7 +8,6 @@ repeat wait() until game:GetService("Players").LocalPlayer.Character:FindFirstCh
 wait(2)
 
 getgenv().Nuke = true
-getgenv().Equipped = false -- DONT TOUCH THIS
 getgenv().BuyMask = true
 
 local Amount = 0; -- DONT TOUCH THIS
