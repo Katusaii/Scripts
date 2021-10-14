@@ -67,7 +67,7 @@ UserInput.InputBegan:Connect(function(Key, Typing)
     if Typing then return end
     if Key.KeyCode == Enum.KeyCode[ActivateNukeKey] then
         for _, v in pairs(Player.Character:GetChildren()) do
-            if v.Name == "[Grenade]" and Amount == 200 then
+            if v.Name == "[Grenade]" and Nuke == false then
                 v:Activate()
             end
         end
