@@ -45,7 +45,7 @@ game:GetService("RunService").Stepped:Connect(function()
         Player.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Ignored.Shop["[Grenade] - $700"].Head.CFrame + Vector3.new(0, -5, 0)
         Player.Character.Humanoid:ChangeState("StrafingNoPhysics")
         wait()
-        if Amount ~= 200 then
+        if Amount ~= MaxAmount then
             fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Grenade] - $700"].ClickDetector)
         end
         wait()
