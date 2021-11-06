@@ -11,6 +11,7 @@ getgenv().Nuke = true
 getgenv().BuyMask = true
 
 local Amount = 0; -- DONT TOUCH THIS
+local MaxAmount = 100 -- PUT ANYTHING HERE
 local ActivateNukeKey = "Q"
 local Player = game:GetService("Players").LocalPlayer;
 local UserInput = game:GetService("UserInputService");
@@ -55,7 +56,7 @@ game:GetService("RunService").Stepped:Connect(function()
                 print("Amount: "..Amount)
             end
         end
-        if Amount == 200 then
+        if Amount == MaxAmount then
             wait(1)
             Nuke = false
             Player.Character.HumanoidRootPart.CFrame = CFRAME
