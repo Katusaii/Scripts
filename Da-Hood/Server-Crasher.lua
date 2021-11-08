@@ -1,4 +1,4 @@
--- [ MADE BY ! Lewis#0001 ] --
+-- [ MADE BY Lewis#0004 ] --
 -- [ CASH NEEDED : 2000 - 2060 ] --
 -- [ CRASH LENGTH : 4 MINUTES 10 SECONDS ] --
 -- [ RESET TO TURN OFF ] --
